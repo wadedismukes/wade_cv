@@ -1,0 +1,76 @@
+---
+output: 
+  pdf_document:
+    latex_engine: pdflatex
+    template: ~/Documents/wade_cv/svm-latex-cv.tex
+geometry: margin=1in
+
+title: "CV"
+author: Wade Dismukes
+
+jobtitle: "Research Assistant, Heath Lab, Iowa State University"
+address: "353 Bessey 2200 Osborn Dr Ames, IA 50011-4009"
+fontawesome: yes
+email: waded@iastate.edu
+github: wadedismukes
+# phone: "+353 1 408 4800"
+web: wadedismukes.github.io
+updated: yes
+
+keywords: R Markdown, academic CV, template
+
+fontfamily: mathpazo
+fontfamilyoptions: sc, osf
+fontsize: 11pt
+linkcolor: blue
+urlcolor: blue
+---
+
+# Employment
+
+*Iowa State University*
+
+Graduate Research Assistant \hfill July 2016 - present
+
+*University of Missouri, Columbia*
+
+Undergraduate Research Assistant (Pires lab) \hfill Summer 2014 - Spring 2016
+
+Undergraduate Research Assistant (Schultz-Appel Lab) \hfill Fall 2011 - Spring 2014
+
+# Education
+
+*University of Missouri, Columbia*, B. S. Mathematics with Honors \hfill Spring 2016
+
+*University of Missouri, Columbia*, B. S. Biology with Honors \hfill Spring 2016
+
+# Awards
+
+NSF Graduate Research Fellowship \hfill 2016
+
+Botanist of the Year, Botanical Society of America \hfill 2016
+
+Presidential Scholarship, Iowa State University \hfill 2016
+
+Miller Fellowship, Iowa State University \hfill 2016
+
+Hughes Research Fellowship \hfill 2012
+
+Hughes Research Apprenticeship \hfill 2011
+
+# Conference Presentations
+
+*Interrogating the genome evolution of the Cleomaceae using transcriptomic data*, poster \hfill Evolution 2016
+
+*Darwin’s Peaches: Grape-phylloxera galls interrogated by RNA-Seq*, poster \hfill Evolution 2014, Botany 2014
+
+# Outreach
+
+Undergraduate Research Ambassador \hfill Fall 2013 - Spring 2016
+
+# Society Memberships
+
+Phi Beta Kappa - Alpha Chapter, University of Missorui \hfill 2016 - present
+
+Society of Systematic Biologists \hfill 2014 - present
+
