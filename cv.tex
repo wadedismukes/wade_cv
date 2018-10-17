@@ -1,0 +1,197 @@
+\documentclass[12pt]{article}
+
+\topmargin      -1.5cm   % read Lamport p.163
+\oddsidemargin  -0.04cm  % read Lamport p.163
+\evensidemargin -0.04cm  % same as oddsidemargin but for left-hand pages
+\textwidth      16.59cm
+\textheight     23.94cm
+\parskip         7.2pt   % sets spacing between paragraphs
+\parindent         15pt   % sets leading space for paragraphs
+\pagestyle{empty}        % Uncomment if don't want page numbers
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+%WATERMARK TEST [**not part of a CV**]---------------
+%\font\wm=''Baskerville:color=787878'' at 8pt
+%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
+%{\wm 
+%	\begin{textblock}{1}(0,0)
+%		\rotatebox{-90}{\parbox{500mm}{
+%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for 
+%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
+%		}
+%	}
+%	\end{textblock}
+%}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+		{\Large \textsc{Curriculum Vitae}
+	}\bigskip\par}
+
+%--------------------SECTIONS-----------------------------------
+%Section: Personal Data
+\section{\LARGE Wade Dismukes}
+
+\begin{tabular}{rl}
+    \textsc{Address:}   & 353 Bessey Hall, Iowa State University \\
+                        & Ames, Iowa, 50010 \\
+    \textsc{email:}     & \href{mailto:waded@iastate.edu}{waded@iastate.edu}\\
+    \textsc{Website:}   & \href{https://www.wadedismukes.com/} {wadedismukes.com}
+\end{tabular}
+
+%Section: Education
+\section{Education}
+\begin{tabular}{r|p{11cm}}
+ \emph{July 2016 - Current} & \emph{PhD. Student in Ecology \& Evolutionary Biology} \\
+ & Iowa State University \\
+ & Advisor: Dr. Tracy Heath \\\multicolumn{2}{c}{} \\\textsc{August 2011 - May 2016} &\emph{B.S. in Mathematics}, University of Missouri - Columbia \\&\footnotesize{Univeristy of Missouri - Columbia, graduated with honors, cum laude}\\\multicolumn{2}{c}{} \\
+ \textsc{August 2011 - May 2016} & \emph{B.S. in Biology}, University of Missouri - Columbia \\&\footnotesize{Univeristy of Missouri - Columbia, graduated with honors, cum laude}\\\multicolumn{2}{c}{} \\
+
+\end{tabular}
+
+%Section: Research
+\section{Research Experience}
+\begin{tabular}{r|l}	
+  \emph{July 2016 - Current} & Graduate Research Assistant \\
+   & Department of Ecology, Evolution, and Organismal Biology \\
+  & Iowa State University, Ames, Iowa \\
+ &  Advisor: Dr. Tracy Heath \\\multicolumn{2}{c}{} \\
+  \textsc{June 2014 - May 2016} & Undergraduate Research Assistant \\
+& University of Missouri, Columbia \\
+& Advisor: Dr. J. Chris Pires \\\multicolumn{2}{c}{} \\
+ \textsc{August 2011 - May 2014} & Undergraduate Research Assistant \\
+ & University of Missouri, Columbia \\
+ & Advisors: Dr. Heidi Appel \& Dr. Jack C. Schultz \\\multicolumn{2}{c}{} \\
+
+\end{tabular}
+
+\section{Teaching Experience}
+\begin{tabular}{r|l}
+  \textsc{Spring} 2018 & Graduate Teaching Assistant \\
+   & Biology 256L - Human Physiology Lab \\
+  & Iowa State University \\
+ \multicolumn{2}{c}{} \\	
+  \textsc{Fall} 2017 & Graduate Teaching Assistant \\
+   & Biology 211 - Introductory Biology Lab \\
+  & Iowa State University \\
+\end{tabular}
+
+%Section: Scholarships and additional info
+\section{Scholarships \& Awards}
+\begin{tabular}{rl}
+ 2018 & Travel Award Ecology and Evolutionary Biology \\
+ 2016 & Graduate Research Fellowship, National Science Foundation \\
+ 2016 & Miller Scholarship, Iowa State University \\ 
+ 2016 & Presidential Scholarship, Iowa State University \\
+ 2016 & Young Botanist of the Year Award, Botanical Society of America \\ 
+ 2016 & Colonel Arthur Allen Scholarship, University of Missouri \\
+ 2014 & Undergraduate Research Travel Award, University of Missouri \\
+ 2014 & Life Sciences Undegraduate Research Opportunity,  University of Missouri \\
+ 2013 & Undergraduate Research Travel Award, University of Missouri \\
+ 2013 & Monsanto Undegraduate Research Fund,  University of Missouri \\
+ 2012 & Hughes Research Fellowship,  University of Missouri \\
+ 2011 & Hughes Research Apprenticeship,  University of Missouri \\
+
+\end{tabular}
+
+\section{Conference Presentations}
+2018. \textbf{Wade Dismukes}, Tracy Heath. "Evaluating a method for detecting hybridization using macroevolutionary simulator of phylogenomic data", Lightning talk. \\
+Society of Systematic Biologists Meeting, Columbus, Ohio, USA. \\
+
+2017. \textbf{Wade Dismukes}, Tracy Heath. "A macroevolutionary simulator of phylogenomic data", Poster.\\ Evolution, Portland, Oregon, USA. \\
+
+2016. \textbf{Wade Dismukes}, Jocelyn Hall, Patrick Edger, J. Chris Pires. "Interrogating the genome evolution of the Cleomaceae using transcriptomic data", Poster. \\
+Evolution, Austin, Texas, USA. \\
+
+2014. \textbf{Wade Dismukes}, Patrick Edger, J. Chris Pires, Heidi Appel, Jack C. Schultz. "Darwin's peaches: grape-phylloxera galls interrogated by RNA-seq", Poster. \\
+Evolution, Raleigh, North Carolina, USA  \\
+
+2014. \textbf{Wade Dismukes}, Patrick Edger, J. Chris Pires, Heidi Appel, Jack C. Schultz. "Darwin's peaches: grape-phylloxera galls interrogated by RNA-seq", Poster. \\
+Botany, Boise, Idaho, USA \\
+
+
+\section{Workshop \& Hackathon Participation}
+\begin{itemize}
+    \item RevBayes Hackathon, LBBE, Lyon, France, August 13-17, 2018
+    \item RevBayes Hackathon, University of Minnesota, Minneapolis, Minnesota, March 1-5, 2018
+    \item NIMBioS RevBayes Workshop, NIMBioS, Knoxville, Tennessee, August 2018
+    \item Woods Hole Workshop on Molecular Evolution, July 2013
+\end{itemize}
+
+
+\section{Outreach}
+\begin{itemize}
+\item Preparing Summer Undergraduate Research Applications for Underrepresented Students. STEM Scholars Program Workshop. January 8, 2018.
+    \begin{itemize}
+           \item Provided advice, personal experiences of getting into research, and 1-on-1 editing of application materials.
+    \end{itemize} 
+\item Undergraduate Research Ambassador, University of Missouri 2013 - 2016.
+    \begin{itemize}
+           \item Fostered the participation of undergraduate students in research, and helped organize annual undergraduate research symposium.
+     \end{itemize}
+\end{itemize}
+
+
+\section{Society Memberships}
+\begin{itemize}
+    \item Society of Systematic Biology
+    \item Society for the Study of Evolution
+    \item Phi Beta Kappa, Alpha of Missouri Chapter 
+\end{itemize}
+
+%\newpage
+%\hypertarget{gmat}{\textsc{Gmat}\setmainfont{LMRoman10 Regular}\textregistered\setmainfont[SmallCapsFont=Fontin-SmallCaps]{Fontin-Regular}}
+
+%\XeTeXpdffile ''GMAT.pdf'' page 1 scaled 800
+
+\end{document}
